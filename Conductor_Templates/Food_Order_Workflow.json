@@ -1,0 +1,47 @@
+{
+  "name": "Food_Order_Workflow",
+  "description": "Food Order Workflow",
+  "version": 1,
+  "tasks": [
+    {
+      "name": "create_order_task",
+      "taskReferenceName": "create_order_task",
+      "inputParameters": {},
+      "type": "SIMPLE"
+    },
+    {
+      "name": "accept_order_task",
+      "taskReferenceName": "accept_order_task",
+      "inputParameters": {},
+      "type": "SIMPLE"
+    },
+    {
+      "name": "prepare_order_task",
+      "taskReferenceName": "prepare_order_task",
+      "inputParameters": {},
+      "type": "SIMPLE"
+    },
+    {
+      "name": "deliver_order_task",
+      "taskReferenceName": "deliver_order_task",
+      "inputParameters": {},
+      "type": "SIMPLE"
+    },
+    {
+      "name": "complete_order_task",
+      "taskReferenceName": "complete_order_task",
+      "inputParameters": {},
+      "type": "SIMPLE"
+    }
+  ],
+  "inputParameters": [],
+  "outputParameters": {},
+  "schemaVersion": 2,
+  "restartable": true,
+  "workflowStatusListenerEnabled": false,
+  "ownerEmail": "example@mail.com",
+  "timeoutPolicy": "ALERT_ONLY",
+  "timeoutSeconds": 0,
+  "variables": {},
+  "inputTemplate": {}
+}
