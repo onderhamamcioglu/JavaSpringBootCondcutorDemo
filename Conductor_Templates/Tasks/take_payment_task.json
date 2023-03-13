@@ -1,16 +1,14 @@
 {
   "createdBy": "",
   "updatedBy": "",
-  "name": "create_order_task",
-  "description": "Create Order",
+  "name": "take_payment_task",
+  "description": "Take Payment",
   "retryCount": 3,
   "timeoutSeconds": 1200,
   "inputKeys": [
-    "order"
-  ],
-  "outputKeys": [
     "cost"
   ],
+  "outputKeys": [],
   "timeoutPolicy": "TIME_OUT_WF",
   "retryLogic": "FIXED",
   "retryDelaySeconds": 60,

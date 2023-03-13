@@ -1,8 +1,8 @@
 {
   "createdBy": "",
   "updatedBy": "",
-  "name": "complete_order_task",
-  "description": "Complete Order",
+  "name": "send_order_task",
+  "description": "Send Order",
   "retryCount": 3,
   "timeoutSeconds": 1200,
   "inputKeys": [],

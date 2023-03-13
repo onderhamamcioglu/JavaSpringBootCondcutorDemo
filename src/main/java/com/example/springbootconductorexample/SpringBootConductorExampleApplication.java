@@ -41,10 +41,12 @@ public class SpringBootConductorExampleApplication {
         workerArrayList.add(acceptOrderWorker);
         Worker prepareOrderWorker = new PrepareOrderWorker("prepare_order_task");
         workerArrayList.add(prepareOrderWorker);
+        Worker sendOrderWorker = new SendOrderWorker("send_order_task");
+        workerArrayList.add(sendOrderWorker);
         Worker deliverOrderWorker = new DeliverOrderWorker("deliver_order_task");
         workerArrayList.add(deliverOrderWorker);
-        Worker completeOrderWorker = new CompleteOrderWorker("complete_order_task");
-        workerArrayList.add(completeOrderWorker);
+        Worker takePaymentWorker = new TakePaymentWorker("take_payment_task");
+        workerArrayList.add(takePaymentWorker);
 
 
 

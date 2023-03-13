@@ -4,11 +4,11 @@ import com.netflix.conductor.client.worker.Worker;
 import com.netflix.conductor.common.metadata.tasks.Task;
 import com.netflix.conductor.common.metadata.tasks.TaskResult;
 
-public class DeliverOrderWorker implements Worker {
+public class SendOrderWorker implements Worker {
 
     private final String taskDefName;
 
-    public DeliverOrderWorker(String taskDefName) {
+    public SendOrderWorker(String taskDefName) {
         this.taskDefName = taskDefName;
     }
 
@@ -21,7 +21,7 @@ public class DeliverOrderWorker implements Worker {
     public TaskResult execute(Task task) {
         TaskResult result = new TaskResult(task);
 
-        System.out.println("***Order Delivered***");
+        System.out.println("***Order Sent***");
 
         result.setStatus(TaskResult.Status.COMPLETED);
         return result;
