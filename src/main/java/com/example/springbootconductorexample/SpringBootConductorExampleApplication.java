@@ -28,7 +28,7 @@ public class SpringBootConductorExampleApplication {
         TaskClient taskClient = new TaskClient();
         taskClient.setRootURI("http://localhost:8080/api/");
 
-        int threadCount = 1; // number of threads used to execute workers.
+        int threadCount = 6; // number of threads used to execute workers.
 
         //List of workers to give conductor
         Collection workerArrayList = new ArrayList<Worker>();

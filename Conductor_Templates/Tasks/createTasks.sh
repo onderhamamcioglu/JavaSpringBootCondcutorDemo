@@ -1,0 +1,122 @@
+curl --location 'http://localhost:8080/api/metadata/taskdefs' \
+--header 'Content-Type: application/json' \
+--data-raw '[
+  {
+    "name": "accept_order_task",
+  "description": "Accept Order",
+  "retryCount": 3,
+  "timeoutSeconds": 1200,
+  "inputKeys": [],
+  "outputKeys": [],
+  "timeoutPolicy": "TIME_OUT_WF",
+  "retryLogic": "FIXED",
+  "retryDelaySeconds": 60,
+  "responseTimeoutSeconds": 600,
+  "inputTemplate": {},
+  "rateLimitPerFrequency": 0,
+  "rateLimitFrequencyInSeconds": 1,
+  "ownerEmail": "example@mail.com",
+  "backoffScaleFactor": 1
+  },
+  {
+  "createdBy": "",
+  "updatedBy": "",
+  "name": "create_order_task",
+  "description": "Create Order",
+  "retryCount": 3,
+  "timeoutSeconds": 1200,
+  "inputKeys": [
+    "order"
+  ],
+  "outputKeys": [
+    "cost"
+  ],
+  "timeoutPolicy": "TIME_OUT_WF",
+  "retryLogic": "FIXED",
+  "retryDelaySeconds": 60,
+  "responseTimeoutSeconds": 600,
+  "inputTemplate": {},
+  "rateLimitPerFrequency": 0,
+  "rateLimitFrequencyInSeconds": 1,
+  "ownerEmail": "example@mail.com",
+  "backoffScaleFactor": 1
+},
+{
+  "createdBy": "",
+  "updatedBy": "",
+  "name": "deliver_order_task",
+  "description": "Deliver Order",
+  "retryCount": 3,
+  "timeoutSeconds": 1200,
+  "inputKeys": [],
+  "outputKeys": [],
+  "timeoutPolicy": "TIME_OUT_WF",
+  "retryLogic": "FIXED",
+  "retryDelaySeconds": 60,
+  "responseTimeoutSeconds": 600,
+  "inputTemplate": {},
+  "rateLimitPerFrequency": 0,
+  "rateLimitFrequencyInSeconds": 1,
+  "ownerEmail": "example@mail.com",
+  "backoffScaleFactor": 1
+},
+{
+  "createdBy": "",
+  "updatedBy": "",
+  "name": "prepare_order_task",
+  "description": "Prepare Order",
+  "retryCount": 3,
+  "timeoutSeconds": 1200,
+  "inputKeys": [],
+  "outputKeys": [],
+  "timeoutPolicy": "TIME_OUT_WF",
+  "retryLogic": "FIXED",
+  "retryDelaySeconds": 60,
+  "responseTimeoutSeconds": 600,
+  "inputTemplate": {},
+  "rateLimitPerFrequency": 0,
+  "rateLimitFrequencyInSeconds": 1,
+  "ownerEmail": "example@mail.com",
+  "backoffScaleFactor": 1
+},
+{
+  "createdBy": "",
+  "updatedBy": "",
+  "name": "send_order_task",
+  "description": "Send Order",
+  "retryCount": 3,
+  "timeoutSeconds": 1200,
+  "inputKeys": [],
+  "outputKeys": [],
+  "timeoutPolicy": "TIME_OUT_WF",
+  "retryLogic": "FIXED",
+  "retryDelaySeconds": 60,
+  "responseTimeoutSeconds": 600,
+  "inputTemplate": {},
+  "rateLimitPerFrequency": 0,
+  "rateLimitFrequencyInSeconds": 1,
+  "ownerEmail": "example@mail.com",
+  "backoffScaleFactor": 1
+},
+{
+  "createdBy": "",
+  "updatedBy": "",
+  "name": "take_payment_task",
+  "description": "Take Payment",
+  "retryCount": 3,
+  "timeoutSeconds": 1200,
+  "inputKeys": [
+    "cost"
+  ],
+  "outputKeys": [],
+  "timeoutPolicy": "TIME_OUT_WF",
+  "retryLogic": "FIXED",
+  "retryDelaySeconds": 60,
+  "responseTimeoutSeconds": 600,
+  "inputTemplate": {},
+  "rateLimitPerFrequency": 0,
+  "rateLimitFrequencyInSeconds": 1,
+  "ownerEmail": "example@mail.com",
+  "backoffScaleFactor": 1
+}
+]'
