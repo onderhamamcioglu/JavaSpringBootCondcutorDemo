@@ -33,8 +33,6 @@ public class SpringBootConductorExampleApplication {
         //List of workers to give conductor
         Collection workerArrayList = new ArrayList<Worker>();
 
-
-        //FIXME | IF YOU ARE COPYING THESE, DONT FORGET TO CHANGE NAMES
         Worker createOrderWorker = new CreateOrderWorker("create_order_task");
         workerArrayList.add(createOrderWorker);
         Worker acceptOrderWorker = new AcceptOrderWorker("accept_order_task");
